@@ -190,7 +190,7 @@ It is easy to think that "completed transaction will survive permanently"
 along with "the state of Arvo is pure function of its event log" implies that
 nothing can ever be deleted. This is not quite true.
 [Clay](/reference/arvo/clay/clay) is our [referentially
-transparency](https://en.wikipedia.org/wiki/Referential_transparency)
+transparent](https://en.wikipedia.org/wiki/Referential_transparency)
 file system, which could naively be thought to mean that since data must be
 immutable, files cannot be deleted. However, Clay can replace a file with a
 "tombstone" that causes Clay to crash whenever it is accessed. Referential
